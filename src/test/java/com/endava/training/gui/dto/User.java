@@ -1,4 +1,5 @@
 package com.endava.training.gui.dto;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class UIMessage {
-    private String mainMessage;
-    private String secondaryMessage;
+public class User {
+    private String username;
+    private String password;
 }
