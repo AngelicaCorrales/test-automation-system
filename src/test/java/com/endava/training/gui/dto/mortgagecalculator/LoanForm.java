@@ -1,4 +1,4 @@
-package com.endava.training.gui.dto;
+package com.endava.training.gui.dto.mortgagecalculator;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

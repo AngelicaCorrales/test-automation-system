@@ -1,7 +1,7 @@
 package com.endava.training.gui.test.mortgagecalculator;
 
-import com.endava.training.gui.dto.LoanForm;
-import com.endava.training.gui.dto.LoanResults;
+import com.endava.training.gui.dto.mortgagecalculator.LoanForm;
+import com.endava.training.gui.dto.mortgagecalculator.LoanResults;
 import com.endava.training.gui.page.mortgagecalculator.HomePage;
 import com.endava.training.gui.page.mortgagecalculator.LoanCalculatorPage;
 import com.endava.training.gui.utils.ConfigManager;
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
-import static com.endava.training.gui.constants.TestDataConstants.*;
+import static com.endava.training.gui.constants.mortgagecalculator.MortgagecalculatorTestDataConstants.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LoanCalculatorTest {

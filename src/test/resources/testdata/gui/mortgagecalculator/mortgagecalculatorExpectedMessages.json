@@ -30,5 +30,9 @@
     "totalInterestExpenseLoan2": "$158,316.21",
     "totalInterestSavingsLoan1": "$0.00",
     "totalInterestSavingsLoan2":"$86,919.18"
+  },
+  "success_simple_mortgage_calculation": {
+    "mainMessage": "$4619.69"
   }
+
 }

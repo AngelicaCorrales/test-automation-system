@@ -1,13 +1,8 @@
 package com.endava.training.gui.test.timeanddate;
 
 import com.endava.training.gui.dto.UIMessage;
-import com.endava.training.gui.dto.User;
-import com.endava.training.gui.page.saucedemo.CartPage;
-import com.endava.training.gui.page.saucedemo.CheckoutCompletePage;
-import com.endava.training.gui.page.saucedemo.LoginPage;
 import com.endava.training.gui.page.timeanddate.DaysCalculatorPage;
 import com.endava.training.gui.page.timeanddate.HomePage;
-import com.endava.training.gui.test.saucedemo.CheckoutUtils;
 import com.endava.training.gui.utils.ConfigManager;
 import com.endava.training.gui.utils.DataReader;
 import com.endava.training.gui.utils.WebDriverManager;
@@ -16,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
-import static com.endava.training.gui.constants.TestDataConstants.*;
+import static com.endava.training.gui.constants.timeanddate.TimeanddateTestDataConstants.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class DaysCalculatorTest {

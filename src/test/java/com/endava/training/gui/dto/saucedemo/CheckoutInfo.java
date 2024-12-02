@@ -1,4 +1,4 @@
-package com.endava.training.gui.dto;
+package com.endava.training.gui.dto.saucedemo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

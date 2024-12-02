@@ -1,6 +1,7 @@
 package com.endava.training.gui.actions;
 
 import com.endava.training.gui.utils.ScreenshotUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -74,6 +75,27 @@ public class WebAction {
             throw e;
         }
     }
+
+    public void switchToFrame(WebElement element) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.of(10, ChronoUnit.SECONDS));
+            wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(element));
+        } catch (NoSuchElementException e) {
+            takeScreenShot("error_switching_to_frame_" + element);
+            throw e;
+        }
+    }
+
+    public void switchToDefaultContent() {
+        try {
+            driver.switchTo().defaultContent();
+        } catch (Exception e) {
+            takeScreenShot("error_switching_to_default_content");
+            throw e;
+        }
+    }
+
+
     public void selectElement(String input, WebElement element){
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.of(10, ChronoUnit.SECONDS));

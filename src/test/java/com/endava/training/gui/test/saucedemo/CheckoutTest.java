@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
-import static com.endava.training.gui.constants.TestDataConstants.*;
+import static com.endava.training.gui.constants.saucedemo.SaucedemoTestDataConstants.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CheckoutTest {

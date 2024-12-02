@@ -1,13 +1,13 @@
 package com.endava.training.gui.test.saucedemo;
 
-import com.endava.training.gui.dto.CheckoutInfo;
+import com.endava.training.gui.dto.saucedemo.CheckoutInfo;
 import com.endava.training.gui.page.saucedemo.CartPage;
 import com.endava.training.gui.page.saucedemo.CheckoutCompletePage;
 import com.endava.training.gui.page.saucedemo.CheckoutStepOnePage;
 import com.endava.training.gui.page.saucedemo.CheckoutStepTwoPage;
 import com.endava.training.gui.utils.DataReader;
 
-import static com.endava.training.gui.constants.TestDataConstants.VALID_CHECKOUT_INFO;
+import static com.endava.training.gui.constants.saucedemo.SaucedemoTestDataConstants.*;
 
 public class CheckoutUtils {
 

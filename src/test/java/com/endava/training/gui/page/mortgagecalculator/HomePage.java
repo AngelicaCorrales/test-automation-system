@@ -16,6 +16,12 @@ public class HomePage {
     @FindBy(xpath="//a[text()=\"Personal Loans\"]")
     private WebElement personalLoansOption;
 
+    @FindBy(xpath="//a[text()=\"Widgets\"]")
+    private WebElement widgetsNavOption;
+
+    @FindBy(xpath="//a[text()=\"Sidebar Calculators\"]")
+    private WebElement sidebarCalculatorsOption;
+
     public  HomePage(WebDriver driver){
         this.driver=driver;
         actor= new WebAction(driver);
@@ -34,5 +40,19 @@ public class HomePage {
         hoverFinancialCalcs();
         clickPersonalLoans();
         return new LoanCalculatorPage(driver);
+    }
+
+    public void clickSidebarCalculators(){
+        actor.click(sidebarCalculatorsOption);
+    }
+
+    public void hoverWidgets(){
+        actor.moveToElement(widgetsNavOption);
+    }
+
+    public FreeToolsPage goToFreeTools(){
+        hoverWidgets();
+        clickSidebarCalculators();
+        return new FreeToolsPage(driver);
     }
 }

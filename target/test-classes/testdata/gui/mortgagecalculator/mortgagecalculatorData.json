@@ -20,5 +20,11 @@
     "discountPoints": "3",
     "loanOriginationFees": "1",
     "otherClosingCosts": "800"
+  },
+  "valid_simple_mortgage_calculator_form": {
+    "loanAmountSimpleCalculator": "700000",
+    "interestRateSimpleCalculator":"5",
+    "termLengthSimpleCalculator": "20"
   }
+
 }
