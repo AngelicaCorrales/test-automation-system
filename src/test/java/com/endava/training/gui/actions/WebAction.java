@@ -4,6 +4,7 @@ import com.endava.training.gui.utils.ScreenshotUtils;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -67,6 +68,20 @@ public class WebAction {
             }
         }catch (NoSuchElementException e){
             takeScreenShot("error_typing_on_"+element);
+            throw e;
+        }
+    }
+
+    public void moveToElement(WebElement element) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.of(10, ChronoUnit.SECONDS));
+            WebElement visibleElement = wait.until(ExpectedConditions.visibilityOf(element));
+            if (visibleElement.isDisplayed()) {
+                Actions actions = new Actions(driver);
+                actions.moveToElement(visibleElement).perform();
+            }
+        } catch (NoSuchElementException e) {
+            takeScreenShot("error_hovering_on_" + element);
             throw e;
         }
     }
