@@ -26,21 +26,27 @@ public class FreeToolsTest {
 
     @BeforeEach
     public void setUp() {
+        System.out.println("***Starting test setup...");
         webDriverManager = new WebDriverManager();
         driver = webDriverManager.getDriver();
         HomePage homePage = new HomePage(driver);
         driver.get(ConfigManager.getProperty("mortgagecalculatorBaseURL"));
-
+        System.out.println("Go to Free Tools...");
         freeToolsPage= homePage.goToFreeTools();
+        System.out.println("***Test setup completed");
     }
     @Test
     public void successSimpleMortgageCalculation() {
+       System.out.println("***Starting successSimpleMortgageCalculation execution");
+        System.out.println("Initializing test data");
        SimpleMortgageCalculatorForm simpleMortgageCalculatorForm = mortgagecalculatorData.getData(VALID_SIMPLE_MORTGAGE_CALCULATOR_FORM, SimpleMortgageCalculatorForm.class);
+        System.out.println("Initializing test result");
        UIMessage calculationResult = result.getData(SUCCESS_SIMPLE_MORTGAGE_CALCULATION, UIMessage.class);
-
+        System.out.println("Calculating with simple calculator...");
        freeToolsPage.calculateWithSimpleCalculator(simpleMortgageCalculatorForm.getLoanAmountSimpleCalculator(),simpleMortgageCalculatorForm.getInterestRateSimpleCalculator(),simpleMortgageCalculatorForm.getTermLengthSimpleCalculator());
 
         assertEquals(calculationResult.getMainMessage(),freeToolsPage.getMonthlyPaymentSimpleCalculator());
+        System.out.println("***SuccessSimpleMortgageCalculation execution completed");
     }
 
     @AfterEach

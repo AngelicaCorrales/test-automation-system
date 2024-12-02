@@ -25,19 +25,24 @@ public class LoanCalculatorTest {
 
     @BeforeEach
     public void setUp() {
+        System.out.println("***Starting test setup...");
         webDriverManager = new WebDriverManager();
         driver = webDriverManager.getDriver();
         HomePage homePage = new HomePage(driver);
         driver.get(ConfigManager.getProperty("mortgagecalculatorBaseURL"));
-
+        System.out.println("Go to Loan Calculator...");
         loanCalculatorPage= homePage.goToLoanCalculator();
+        System.out.println("***Test setup completed");
     }
 
     @Test
     public void successLoanCalculation() {
+        System.out.println("***Starting successLoanCalculation execution");
+        System.out.println("Initializing test data");
         LoanForm loanForm= mortgagecalculatorData.getData(VALID_LOAN_FORM, LoanForm.class);
+        System.out.println("Initializing test result");
         LoanResults loanResults = result.getData(SUCCESS_LOAN_CALCULATION, LoanResults.class);
-
+        System.out.println("Calculating loan...");
         loanCalculatorPage.calculateLoan(loanForm.getPurchasePrice(),loanForm.getSalesTax(),loanForm.getFinanceApplicationFees(),loanForm.getDownpayment(),loanForm.getLoanAmount(),loanForm.getLoanTermOption(),loanForm.getLoanTermInput(),loanForm.getInterestRate(),loanForm.getPaymentsFrequency());
         assertAll(
                 "Grouped Assertions of Loan Calculation Result",
@@ -48,6 +53,7 @@ public class LoanCalculatorTest {
                 ()->assertTrue(loanCalculatorPage.getNumberPaymentsUntilRepaid().contains(loanResults.getNumberPaymentsUntilRepaid())),
                 ()->assertTrue(loanCalculatorPage.getTotalCostPurchase().contains(loanResults.getTotalCostPurchase()))
         );
+        System.out.println("***SuccessLoanCalculation execution completed");
     }
 
     @AfterEach

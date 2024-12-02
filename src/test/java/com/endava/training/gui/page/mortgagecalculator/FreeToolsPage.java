@@ -56,10 +56,15 @@ public class FreeToolsPage {
     }
 
     public void calculateWithSimpleCalculator(String loanAmountSimpleCalculator, String interestRateSimpleCalculator, String termLengthSimpleCalculator){
+        System.out.println("switch To iFrame");
         switchToFrame(simpleCalculatorIFrame);
+        System.out.println("enter Loan Amount Simple Calculator");
         enterLoanAmountSimpleCalculator(loanAmountSimpleCalculator);
+        System.out.println("enter Interest Rate Simple Calculator");
         enterInterestRateSimpleCalculator(interestRateSimpleCalculator);
+        System.out.println("enter Term Length Simple Calculator");
         enterTermLengthSimpleCalculator(termLengthSimpleCalculator);
+        System.out.println("click Calculate SimpleCalculator");
         clickCalculateSimpleCalculator();
     }
 

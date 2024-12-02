@@ -25,20 +25,27 @@ public class BestHomeLoanCalculatorTest {
 
     @BeforeEach
     public void setUp() {
+        System.out.println("***Starting test setup...");
         webDriverManager = new WebDriverManager();
         driver = webDriverManager.getDriver();
         HomePage homePage = new HomePage(driver);
         driver.get(ConfigManager.getProperty("mortgagecalculatorBaseURL"));
 
+        System.out.println("Go to loan calculator...");
         LoanCalculatorPage loanCalculatorPage= homePage.goToLoanCalculator();
+        System.out.println("Go to best home loan calculator...");
         bestHomeLoanCalculatorPage= loanCalculatorPage.goToBestHomeLoanCalculator();
+        System.out.println("***Test setup completed");
     }
 
     @Test
     public void successBestHomeLoanCalculation() {
+        System.out.println("***Starting successBestHomeLoanCalculation execution");
+        System.out.println("Initializing test data");
         HomeLoanForm homeLoanForm= mortgagecalculatorData.getData(VALID_HOME_LOAN1_FORM, HomeLoanForm.class);
+        System.out.println("Initializing test result");
         HomeLoanResults homeLoanResults = result.getData(SUCCESS_HOME_LOAN_CALCULATION, HomeLoanResults.class);
-
+        System.out.println("Calculating Home Loan 1...");
         bestHomeLoanCalculatorPage.calculateHomeLoan1(homeLoanForm.getHomePrice(),homeLoanForm.getDownPayment(),homeLoanForm.getLoanAmount(),homeLoanForm.getMortgageTerm(),homeLoanForm.getInterestRate(),homeLoanForm.getDiscountPoints(),homeLoanForm.getLoanOriginationFees(),homeLoanForm.getOtherClosingCosts());
         assertAll(
                 "Grouped Assertions of Home Loan Calculation Result",
@@ -65,10 +72,12 @@ public class BestHomeLoanCalculatorTest {
                 ()->assertEquals(homeLoanResults.getTotalInterestSavingsLoan1(),bestHomeLoanCalculatorPage.getTotalInterestSavingsLoan1()),
                 ()->assertEquals(homeLoanResults.getTotalInterestSavingsLoan2(),bestHomeLoanCalculatorPage.getTotalInterestSavingsLoan2())
                 );
+        System.out.println("***SuccessBestHomeLoanCalculation execution completed");
     }
 
     @AfterEach
     public void tearDown() {
+        System.out.println("Closing window");
         webDriverManager.quitDriver();
     }
 

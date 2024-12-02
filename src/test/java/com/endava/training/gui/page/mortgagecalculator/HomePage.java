@@ -37,7 +37,9 @@ public class HomePage {
     }
 
     public LoanCalculatorPage goToLoanCalculator(){
+        System.out.println("hover Financial Calcs");
         hoverFinancialCalcs();
+        System.out.println("click Personal Loans");
         clickPersonalLoans();
         return new LoanCalculatorPage(driver);
     }
@@ -51,7 +53,9 @@ public class HomePage {
     }
 
     public FreeToolsPage goToFreeTools(){
+        System.out.println("hover Widgets");
         hoverWidgets();
+        System.out.println("click Sidebar Calculators");
         clickSidebarCalculators();
         return new FreeToolsPage(driver);
     }

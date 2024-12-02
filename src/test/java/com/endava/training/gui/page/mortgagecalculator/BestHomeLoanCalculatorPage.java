@@ -130,7 +130,7 @@ public class BestHomeLoanCalculatorPage {
         actor.sendKeys(interestRate, interestRateLoan1Input);
     }
 
-    public void enterDiscountPoints(String discountPoints) {
+    public void enterDiscountPointsLoan1(String discountPoints) {
         actor.sendKeys(discountPoints, discountPointsLoan1Input);
     }
 
@@ -147,18 +147,28 @@ public class BestHomeLoanCalculatorPage {
     }
 
     public void setHomeLoan1Fields(String homePrice,String downPayment,String loanAmount,String mortgageTerm, String interestRate, String discountPoints, String loanOriginationFees,String otherClosingCosts){
+        System.out.println("enter Home Price Loan 1");
         enterHomePriceLoan1(homePrice);
+        System.out.println("enter DownPayment Loan 1");
         enterDownPaymentLoan1(downPayment);
+        System.out.println("enter Loan Amount Loan 1");
         enterLoanAmountLoan1(loanAmount);
+        System.out.println("enter Mortgage Term Loan 1");
         enterMortgageTermLoan1(mortgageTerm);
+        System.out.println("enter Interest Rate Loan 1");
         enterInterestRateLoan1(interestRate);
-        enterDiscountPoints(discountPoints);
+        System.out.println("enter Discount Points Loan 1");
+        enterDiscountPointsLoan1(discountPoints);
+        System.out.println("enter Loan Origination Fees Loan 1");
         enterLoanOriginationFeesLoan1(loanOriginationFees);
+        System.out.println("enter Other Closing Costs Loan 1");
         enterOtherClosingCostsLoan1(otherClosingCosts);
     }
 
     public void calculateHomeLoan1(String homePrice1, String downPayment1, String loanAmount1, String mortgageTerm1, String interestRate1, String discountPoints1, String loanOriginationFees1, String otherClosingCosts1){
+        System.out.println("Setting home loan 1 fiels...");
         setHomeLoan1Fields(homePrice1,downPayment1,loanAmount1,mortgageTerm1,interestRate1,discountPoints1,loanOriginationFees1,otherClosingCosts1);
+        System.out.println("Click calculate");
         clickCalculate();
     }
 

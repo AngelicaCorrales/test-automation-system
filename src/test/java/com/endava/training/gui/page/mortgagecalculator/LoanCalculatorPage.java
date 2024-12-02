@@ -76,7 +76,7 @@ public class LoanCalculatorPage {
         actor.sendKeys(salesTax, salesTaxInput);
     }
 
-    public void enterFinanceApplicationfees(String financeApplicationFees) {
+    public void enterFinanceApplicationFees(String financeApplicationFees) {
         actor.sendKeys(financeApplicationFees, financeApplicationFeesInput);
     }
 
@@ -109,15 +109,25 @@ public class LoanCalculatorPage {
     }
 
     public void calculateLoan(String purchasePrice, String salesTax, String financeApplicationFees, String downpayment, String loanAmount,String loanTermOption, String loanTermInput, String interestRate,  String paymentsFrequency){
+        System.out.println("enter Purchase Price");
         enterPurchasePrice(purchasePrice);
+        System.out.println("enter Sales Tax");
         enterSalesTax(salesTax);
-        enterFinanceApplicationfees(financeApplicationFees);
+        System.out.println("enter Finance Application Fees");
+        enterFinanceApplicationFees(financeApplicationFees);
+        System.out.println("enter Downpayment");
         enterDownpayment(downpayment);
+        System.out.println("enter Loan Amount");
         enterLoanAmount(loanAmount);
+        System.out.println("select Loan Term");
         selectLoanTerm(loanTermOption);
+        System.out.println("enter Loan Term");
         enterLoanTerm(loanTermInput);
+        System.out.println("enter Interest Rate");
         enterInterestRate(interestRate);
+        System.out.println("select Payments Frequency");
         selectPaymentsFrequency(paymentsFrequency);
+        System.out.println("click Calculate");
         clickCalculate();
     }
 
