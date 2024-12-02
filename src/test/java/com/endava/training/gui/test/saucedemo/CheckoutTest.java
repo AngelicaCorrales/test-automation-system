@@ -11,14 +11,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
+import static com.endava.training.gui.constants.TestDataConstants.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CheckoutTest {
 
     private WebDriver driver;
     private WebDriverManager webDriverManager;
-    private final DataReader result = new DataReader(ConfigManager.getProperty("testResult"));
-    private final DataReader userData = new DataReader(ConfigManager.getProperty("testData"));
+    private final DataReader result = new DataReader(ConfigManager.getProperty("saucedemoTestResult"));
+    private final DataReader saucedemoData = new DataReader(ConfigManager.getProperty("saucedemoTestData"));
     private InventoryPage inventoryPage;
 
     @BeforeEach
@@ -26,18 +27,17 @@ public class CheckoutTest {
         webDriverManager = new WebDriverManager();
         driver = webDriverManager.getDriver();
         LoginPage loginPage = new LoginPage(driver);
-        driver.get(ConfigManager.getProperty("baseURL"));
+        driver.get(ConfigManager.getProperty("saucedemoBaseURL"));
 
-        User validUser= userData.getData(VALID_USER, User.class);
+        User validUser= saucedemoData.getData(VALID_USER, User.class);
         inventoryPage= loginPage.successLoginUser(validUser.getUsername(), validUser.getPassword());
     }
 
     @Test
     public void successOneProductCheckout() {
-        //TODO JSON
-        UIMessage message = result.getData(SUCCESS_LOGIN, UIMessage.class);
-        CartPage cartPage= inventoryPage.addFirstProductToCart("Price (high to low)");
-        CheckoutCompletePage checkoutCompletePage = CheckoutUtils.checkoutProccess(cartPage);
+        UIMessage message = result.getData(SUCCESS_CHECKOUT, UIMessage.class);
+        CartPage cartPage= inventoryPage.addFirstProductToCart(SORT_PRICE_HIGH_LOW);
+        CheckoutCompletePage checkoutCompletePage = CheckoutUtils.checkoutProccess(cartPage,saucedemoData);
 
         assertTrue(checkoutCompletePage.getCheckoutCompleteHeader().contains(message.getMainMessage()));
         assertTrue(checkoutCompletePage.getCheckoutCompleteText().contains(message.getSecondaryMessage()));

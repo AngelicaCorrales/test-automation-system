@@ -10,7 +10,7 @@ public class CartPage {
     private final WebDriver driver;
     WebAction actor;
 
-    @FindBy()
+    @FindBy(id="checkout")
     private WebElement checkoutButton;
 
     public CartPage(WebDriver driver){

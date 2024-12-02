@@ -1,0 +1,12 @@
+{
+  "valid_user": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "sort_price_high_low": "Price (high to low)",
+  "valid_checkout_info": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "zipCode": "70000"
+  }
+}

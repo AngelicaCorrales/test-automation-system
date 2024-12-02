@@ -10,7 +10,7 @@ public class CheckoutStepTwoPage {
     private final WebDriver driver;
     WebAction actor;
 
-    @FindBy()
+    @FindBy(id="finish")
     private WebElement finishButton;
 
     public CheckoutStepTwoPage(WebDriver driver){

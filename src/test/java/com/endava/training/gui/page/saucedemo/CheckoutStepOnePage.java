@@ -10,16 +10,16 @@ public class CheckoutStepOnePage {
     private final WebDriver driver;
     WebAction actor;
 
-    @FindBy()
+    @FindBy(id="first-name")
     private WebElement firstNameInput;
 
-    @FindBy()
+    @FindBy(id="last-name")
     private WebElement lastNameInput;
 
-    @FindBy()
+    @FindBy(id="postal-code")
     private WebElement zipCodeInput;
 
-    @FindBy()
+    @FindBy(id="continue")
     private WebElement continueButton;
 
     public CheckoutStepOnePage(WebDriver driver){

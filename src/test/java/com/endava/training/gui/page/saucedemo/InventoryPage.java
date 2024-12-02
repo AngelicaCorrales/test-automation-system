@@ -11,13 +11,13 @@ public class InventoryPage {
     private final WebDriver driver;
     WebAction actor;
 
-    @FindBy()
+    @FindBy(css=".product_sort_container")
     private WebElement sortDropdown;
 
-    @FindBy()
+    @FindBy(css="div.inventory_list > div:first-of-type > div.inventory_item_description > div.pricebar > button")
     private WebElement addFirstToCartButton;
 
-    @FindBy()
+    @FindBy(id="shopping_cart_container")
     private WebElement cartButton;
 
     public InventoryPage(WebDriver driver){
@@ -27,7 +27,7 @@ public class InventoryPage {
     }
 
     public void sortProducts(String text){
-        actor.sendKeys(text,sortDropdown);
+        actor.selectElement(text,sortDropdown);
     }
 
     public void clickAddToCart(WebElement addToCartButton){

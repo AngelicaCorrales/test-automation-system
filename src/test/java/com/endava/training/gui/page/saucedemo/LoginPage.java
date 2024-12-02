@@ -11,13 +11,13 @@ public class LoginPage {
     private final WebDriver driver;
     WebAction actor;
 
-    @FindBy()
+    @FindBy(id="user-name")
     private WebElement usernameInput;
 
-    @FindBy()
+    @FindBy(id="password")
     private WebElement passwordInput;
 
-    @FindBy()
+    @FindBy(id="login-button")
     private WebElement loginButton;
 
     public LoginPage(WebDriver driver){

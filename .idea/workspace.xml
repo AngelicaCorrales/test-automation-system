@@ -6,7 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="6badb76d-3626-42fe-b647-475e621fc60d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/UIMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/UIMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/actions/WebAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/actions/WebAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/constants/TestDataConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/constants/TestDataConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/CheckoutCompletePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/CheckoutStepOnePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/CheckoutStepOnePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/CheckoutStepTwoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/CheckoutStepTwoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/InventoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/saucedemo/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/saucedemo/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/saucedemo/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/saucedemo/CheckoutUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/saucedemo/CheckoutUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/gui/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/gui/saucedemoData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/gui/expectedMessages.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/gui/saucedemoExpectedMessages.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +47,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;finalgui__inter2024__angelica&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CheckoutTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "finalgui__inter2024__angelica",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="CheckoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-automation-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.endava.training.gui.test.saucedemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.endava.training.gui.test.saucedemo" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.training.gui.test.saucedemo.CheckoutTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CheckoutTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

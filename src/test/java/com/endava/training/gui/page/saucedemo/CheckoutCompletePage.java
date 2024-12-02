@@ -10,10 +10,10 @@ public class CheckoutCompletePage {
     private final WebDriver driver;
     WebAction actor;
 
-    @FindBy()
+    @FindBy(css=".complete-header")
     private WebElement completeHeader;
 
-    @FindBy()
+    @FindBy(css=".complete-text")
     private WebElement completeText;
 
     public  CheckoutCompletePage(WebDriver driver){

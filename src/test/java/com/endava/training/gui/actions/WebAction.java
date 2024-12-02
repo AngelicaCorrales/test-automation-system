@@ -58,6 +58,18 @@ public class WebAction {
             throw e;
         }
     }
+    public void selectElement(String input, WebElement element){
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.of(10, ChronoUnit.SECONDS));
+            WebElement visibleElement = wait.until(ExpectedConditions.visibilityOf(element));
+            if (visibleElement.isEnabled()) {
+                visibleElement.sendKeys(input);
+            }
+        }catch (NoSuchElementException e){
+            takeScreenShot("error_typing_on_"+element);
+            throw e;
+        }
+    }
 
     public void takeScreenShot(String message){
         ScreenshotUtils.takeScreenshot(driver, message + System.currentTimeMillis());
