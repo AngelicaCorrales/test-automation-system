@@ -59,6 +59,9 @@ public class LoanCalculatorPage {
     @FindBy(css="input[name=\"total_purchase\"]")
     private WebElement totalCostPurchaseInput;
 
+    @FindBy(xpath="//*[text()=\"Best Home Loan\"]")
+    private WebElement bestHomeLoanListItem;
+
     public LoanCalculatorPage(WebDriver driver){
         this.driver=driver;
         actor= new WebAction(driver);
@@ -140,5 +143,14 @@ public class LoanCalculatorPage {
 
     public String getTotalCostPurchase(){
         return actor.getValue(totalCostPurchaseInput);
+    }
+
+    public void clickBestHomeLoanCalculator(){
+        actor.click(bestHomeLoanListItem);
+    }
+
+    public BestHomeLoanCalculatorPage goToBestHomeLoanCalculator(){
+        clickBestHomeLoanCalculator();
+        return new BestHomeLoanCalculatorPage(driver);
     }
 }

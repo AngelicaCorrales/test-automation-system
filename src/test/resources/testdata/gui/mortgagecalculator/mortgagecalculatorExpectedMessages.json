@@ -6,5 +6,29 @@
      "totalInterestYouWillPay": "$35,377.98",
      "numberPaymentsUntilRepaid":"60",
      "totalCostPurchase": "$96,377.98"
-   }
+   },
+  "success_home_loan_calculation": {
+    "amountFinancedLoan1":"$420,000.00",
+    "amountFinancedLoan2": "$320,000.00",
+    "loanTermLoan1": "20 Years",
+    "loanTermLoan2": "15 Years",
+    "monthlyPrincipalInterestPaymentLoan1": "$2,771.81",
+    "monthlyPrincipalInterestPaymentLoan2": "$2,657.31",
+    "costDiscountPointsLoan1": "$12,600.00",
+    "costDiscountPointsLoan2": "$6,400.00",
+    "loanOriginationFeesLoan1": "$4,200.00",
+    "loanOriginationFeesLoan2": "$1,600.00",
+    "otherClosingCostsLoan1": "$800.00",
+    "otherClosingCostsLoan2": "$700.00",
+    "totalClosingCostsLoan1": "$17,600.00",
+    "totalClosingCostsLoan2": "$8,700.00",
+    "totalMonthlyPaymentsLoan1": "$665,235.39",
+    "totalMonthlyPaymentsLoan2": "$478,316.21",
+    "paymentsSavingsLoan1": "$0.00",
+    "paymentsSavingsLoan2": "$186,919.18",
+    "totalInterestExpenseLoan1": "$245,235.39",
+    "totalInterestExpenseLoan2": "$158,316.21",
+    "totalInterestSavingsLoan1": "$0.00",
+    "totalInterestSavingsLoan2":"$86,919.18"
+  }
 }

@@ -9,5 +9,16 @@
     "loanTermInput": "10",
     "interestRate": "10",
     "paymentsFrequency": "Bimonthly"
+  },
+
+  "valid_home_loan1_form": {
+    "homePrice": "500000",
+    "downPayment": "90000",
+    "loanAmount": "420000",
+    "mortgageTerm": "20",
+    "interestRate": "5",
+    "discountPoints": "3",
+    "loanOriginationFees": "1",
+    "otherClosingCosts": "800"
   }
 }

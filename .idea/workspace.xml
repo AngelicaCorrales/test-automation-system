@@ -7,10 +7,10 @@
     <list default="true" id="6badb76d-3626-42fe-b647-475e621fc60d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/constants/TestDataConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/constants/TestDataConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/LoanCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/LoanCalculatorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/mortgagecalculator/LoanCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/mortgagecalculator/LoanCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/BestHomeLoanCalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/BestHomeLoanCalculatorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/LoanCalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/LoanCalculatorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/gui/mortgagecalculator/mortgagecalculatorData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/gui/mortgagecalculator/mortgagecalculatorData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/gui/mortgagecalculator/mortgagecalculatorExpectedMessages.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/gui/mortgagecalculator/mortgagecalculatorExpectedMessages.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.BestHomeLoanCalculatorTest.executor": "Run",
     "JUnit.CheckoutTest.executor": "Run",
     "JUnit.DaysCalculatorTest.executor": "Run",
     "JUnit.LoanCalculatorTest.executor": "Run",
@@ -55,7 +56,22 @@
       <recent name="C:\Users\acorrales\IdeaProjects\test-automation-system\src\test\resources\testdata\gui\saucedemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoanCalculatorTest">
+  <component name="RunManager" selected="JUnit.BestHomeLoanCalculatorTest">
+    <configuration name="BestHomeLoanCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-automation-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.endava.training.gui.test.mortgagecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.endava.training.gui.test.mortgagecalculator" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.training.gui.test.mortgagecalculator.BestHomeLoanCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CheckoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-automation-system" />
       <extension name="coverage">
@@ -103,6 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BestHomeLoanCalculatorTest" />
         <item itemvalue="JUnit.LoanCalculatorTest" />
         <item itemvalue="JUnit.DaysCalculatorTest" />
         <item itemvalue="JUnit.CheckoutTest" />
