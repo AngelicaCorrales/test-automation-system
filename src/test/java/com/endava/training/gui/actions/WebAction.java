@@ -33,6 +33,21 @@ public class WebAction {
         return text;
     }
 
+    public String getValue(WebElement element) {
+        String value = "";
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.of(10, ChronoUnit.SECONDS));
+            WebElement visibleElement = wait.until(ExpectedConditions.visibilityOf(element));
+            if (visibleElement.isDisplayed()) {
+                value = visibleElement.getAttribute("value");
+            }
+        } catch (NoSuchElementException e) {
+            takeScreenShot("error_getting_value_from_" + element);
+            throw e;
+        }
+        return value;
+    }
+
     public void click(WebElement element){
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.of(10, ChronoUnit.SECONDS));

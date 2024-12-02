@@ -1,0 +1,13 @@
+{
+  "valid_loan_form": {
+    "purchasePrice": "50000000",
+    "salesTax":"2",
+    "financeApplicationFees": "100",
+    "downpayment": "1000",
+    "loanAmount": "60000",
+    "loanTermOption": "Years",
+    "loanTermInput": "10",
+    "interestRate": "10",
+    "paymentsFrequency": "Bimonthly"
+  }
+}
