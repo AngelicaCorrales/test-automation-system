@@ -6,22 +6,35 @@
   <component name="ChangeListManager">
     <list default="true" id="6badb76d-3626-42fe-b647-475e621fc60d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/actions/WebAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/actions/WebAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/constants/TestDataConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/CheckoutInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/saucedemo/CheckoutInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/HomeLoanForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/mortgagecalculator/HomeLoanForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/HomeLoanResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/mortgagecalculator/HomeLoanResults.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/LoanForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/mortgagecalculator/LoanForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/LoanResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/dto/mortgagecalculator/LoanResults.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/FreeToolsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/FreeToolsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/page/mortgagecalculator/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/mortgagecalculator/BestHomeLoanCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/mortgagecalculator/BestHomeLoanCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/mortgagecalculator/LoanCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/mortgagecalculator/LoanCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/saucedemo/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/saucedemo/CheckoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/saucedemo/CheckoutUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/saucedemo/CheckoutUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/timeanddate/DaysCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/training/gui/test/timeanddate/DaysCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/gui/mortgagecalculator/mortgagecalculatorData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/gui/mortgagecalculator/mortgagecalculatorData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/gui/mortgagecalculator/mortgagecalculatorExpectedMessages.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/gui/mortgagecalculator/mortgagecalculatorExpectedMessages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/actions/WebAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/actions/WebAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/UIMessage$UIMessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/UIMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/UIMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/HomeLoanForm$HomeLoanFormBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/HomeLoanForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/HomeLoanForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/HomeLoanResults$HomeLoanResultsBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/HomeLoanResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/HomeLoanResults.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/LoanForm$LoanFormBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/LoanForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/LoanForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/LoanResults$LoanResultsBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/LoanResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/LoanResults.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/SimpleMortgageCalculatorForm$SimpleMortgageCalculatorFormBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/SimpleMortgageCalculatorForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/mortgagecalculator/SimpleMortgageCalculatorForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/saucedemo/CheckoutInfo$CheckoutInfoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/saucedemo/CheckoutInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/dto/saucedemo/CheckoutInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/test/mortgagecalculator/BestHomeLoanCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/test/mortgagecalculator/FreeToolsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/test/mortgagecalculator/LoanCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/test/saucedemo/CheckoutTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/test/saucedemo/CheckoutUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/test/timeanddate/DaysCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/utils/ConfigManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/utils/DataReader$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/utils/DataReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/utils/ScreenshotUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/training/gui/utils/WebDriverManager.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +70,12 @@
     "JUnit.DaysCalculatorTest.executor": "Run",
     "JUnit.FreeToolsTest.executor": "Run",
     "JUnit.LoanCalculatorTest.executor": "Run",
+    "Maven.test-automation-system [clean].executor": "Run",
+    "Maven.test-automation-system [compile].executor": "Run",
+    "Maven.test-automation-system [install].executor": "Run",
+    "Maven.test-automation-system [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "finalgui__inter2024__angelica",
     "kotlin-language-version-configured": "true"
   }

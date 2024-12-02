@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.endava.training.gui.test.saucedemo.CheckoutTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.165 s - in com.endava.training.gui.test.saucedemo.CheckoutTest
