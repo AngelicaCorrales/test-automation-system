@@ -24,6 +24,7 @@ public class CartPage {
     }
 
     public CheckoutStepOnePage continueCheckout(){
+        System.out.println("click Checkout");
         clickCheckout();
         return new CheckoutStepOnePage(driver);
     }

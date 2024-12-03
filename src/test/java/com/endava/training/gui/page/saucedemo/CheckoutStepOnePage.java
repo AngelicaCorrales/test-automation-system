@@ -44,9 +44,13 @@ public class CheckoutStepOnePage {
     }
 
     public void continueCheckout(String firstName, String lastName, String zipCode){
+        System.out.println("enter First Name");
         enterFirstName(firstName);
+        System.out.println("enter Last Name");
         enterLastName(lastName);
+        System.out.println("enter Zip Code");
         enterZipCode(zipCode);
+        System.out.println("click Continue");
         clickContinue();
     }
 

@@ -24,24 +24,31 @@ public class CheckoutTest {
 
     @BeforeEach
     public void setUp() {
+        System.out.println("***Starting test setup...");
         webDriverManager = new WebDriverManager();
         driver = webDriverManager.getDriver();
         LoginPage loginPage = new LoginPage(driver);
         driver.get(ConfigManager.getProperty("saucedemoBaseURL"));
-
+        System.out.println("Initializing user");
         User validUser= saucedemoData.getData(VALID_USER, User.class);
+        System.out.println("Login");
         inventoryPage= loginPage.successLoginUser(validUser.getUsername(), validUser.getPassword());
+        System.out.println("***Test setup completed");
     }
 
     @Test
     public void successOneProductCheckout() {
+        System.out.println("***Starting successOneProductCheckout execution");
+        System.out.println("Initializing test result");
         UIMessage message = result.getData(SUCCESS_CHECKOUT, UIMessage.class);
+        System.out.println("Adding First Product To Cart...");
         CartPage cartPage= inventoryPage.addFirstProductToCart(SORT_PRICE_HIGH_LOW);
-        CheckoutCompletePage checkoutCompletePage = CheckoutUtils.checkoutProccess(cartPage,saucedemoData);
+        System.out.println("Starting checkout process...");
+        CheckoutCompletePage checkoutCompletePage = CheckoutUtils.checkoutProcess(cartPage,saucedemoData);
 
         assertTrue(checkoutCompletePage.getCheckoutCompleteHeader().contains(message.getMainMessage()));
         assertTrue(checkoutCompletePage.getCheckoutCompleteText().contains(message.getSecondaryMessage()));
-
+        System.out.println("***SuccessOneProductCheckout execution completed");
     }
 
     @AfterEach

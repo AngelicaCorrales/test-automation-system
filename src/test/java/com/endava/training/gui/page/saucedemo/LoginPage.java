@@ -39,8 +39,11 @@ public class LoginPage {
     }
 
     public void loginUser(String username, String password) {
+        System.out.println("enter Username");
         enterUsername(username);
+        System.out.println("enter Password");
         enterPassword(password);
+        System.out.println("click Login");
         clickLogin();
     }
 

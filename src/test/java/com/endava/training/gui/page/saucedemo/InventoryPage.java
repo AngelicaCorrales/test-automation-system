@@ -39,8 +39,11 @@ public class InventoryPage {
     }
 
     public CartPage addFirstProductToCart(String sort){
+        System.out.println("sort Products");
         sortProducts(sort);
+        System.out.println("click Add To Cart");
         clickAddToCart(addFirstToCartButton);
+        System.out.println("click Cart");
         clickCart();
         return new CartPage(driver);
     }

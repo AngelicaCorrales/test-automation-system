@@ -24,6 +24,7 @@ public class CheckoutStepTwoPage {
     }
 
     public CheckoutCompletePage finishCheckout(){
+        System.out.println("click Finish");
         clickFinish();
         return new CheckoutCompletePage(driver);
     }
