@@ -1,7 +1,9 @@
 # AUTOMATION GUI 2024
 
 **Objetive:**
-Develop a TAS (Test Automation System) based on the pattern POM implementing the Framework we saw at class, for the following SUT:
+Develop a TAS (Test Automation System) based on the pattern POM implementing the Framework we saw at class.
+
+Selected SUT:
 
 * https://www.saucedemo.com/
 
