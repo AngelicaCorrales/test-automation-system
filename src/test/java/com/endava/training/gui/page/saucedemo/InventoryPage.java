@@ -30,8 +30,8 @@ public class InventoryPage {
         actor.selectElement(text,sortDropdown);
     }
 
-    public void clickAddToCart(WebElement addToCartButton){
-        actor.click(addToCartButton);
+    public void clickAddFirstToCart(){
+        actor.click(addFirstToCartButton);
     }
 
     public void clickCart(){
@@ -42,7 +42,7 @@ public class InventoryPage {
         System.out.println("sort Products");
         sortProducts(sort);
         System.out.println("click Add To Cart");
-        clickAddToCart(addFirstToCartButton);
+        clickAddFirstToCart();
         System.out.println("click Cart");
         clickCart();
         return new CartPage(driver);

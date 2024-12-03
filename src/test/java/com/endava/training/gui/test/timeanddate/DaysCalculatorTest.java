@@ -24,20 +24,26 @@ public class DaysCalculatorTest {
 
     @BeforeEach
     public void setUp() {
+        System.out.println("***Starting test setup...");
         webDriverManager = new WebDriverManager();
         driver = webDriverManager.getDriver();
         HomePage homePage = new HomePage(driver);
         driver.get(ConfigManager.getProperty("timeanddateBaseURL"));
-
+        System.out.println("Go to Date To Date Calculator");
         daysCalculatorPage= homePage.goToDateToDateCalculator();
+        System.out.println("***Test setup completed");
     }
 
     @Test
     public void successDateToDateCalculation() {
+        System.out.println("***Starting successDateToDateCalculation execution");
+        System.out.println("Initializing test result");
         UIMessage message = result.getData(SUCCESS_DATE_TO_DATE_CALCULATION, UIMessage.class);
+        System.out.println("Calculating duration...");
         daysCalculatorPage.calculateDuration();
-        System.out.println(daysCalculatorPage.getResult());
+
         assertTrue(daysCalculatorPage.getResult().contains(message.getMainMessage()));
+        System.out.println("***SuccessDateToDateCalculation execution completed");
     }
 
     @AfterEach

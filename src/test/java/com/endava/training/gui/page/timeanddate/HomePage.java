@@ -33,7 +33,9 @@ public class HomePage {
     }
 
     public DaysCalculatorPage goToDateToDateCalculator(){
+        System.out.println("hover Calculators");
         hoverCalculators();
+        System.out.println("click Date To Date Calculator");
         clickDateToDateCalculator();
         return new DaysCalculatorPage(driver);
     }

@@ -35,12 +35,20 @@ public class DaysCalculatorPage {
         PageFactory.initElements(this.driver,this);
     }
 
-    public void clickCalendar(WebElement calendar){
-        actor.click(calendar);
+    public void clickStartCalendar(){
+        actor.click(startDateCalendar);
     }
 
-    public void clickDateCalendar(WebElement date){
-        actor.click(date);
+    public void clickStartDateCalendar(){
+        actor.click(startDateNumber);
+    }
+
+    public void clickEndCalendar(){
+        actor.click(endDateCalendar);
+    }
+
+    public void clickEndDateCalendar(){
+        actor.click(endDateNumber);
     }
 
     public void clickCalculateDuration(){
@@ -52,10 +60,15 @@ public class DaysCalculatorPage {
     }
 
     public void calculateDuration(){
-        clickCalendar(startDateCalendar);
-        clickDateCalendar(startDateNumber);
-        clickCalendar(endDateCalendar);
-        clickCalendar(endDateNumber);
+        System.out.println("click start Calendar");
+        clickStartCalendar();
+        System.out.println("click start Date Calendar");
+        clickStartDateCalendar();
+        System.out.println("click end Calendar");
+        clickEndCalendar();
+        System.out.println("click end Date Calendar");
+        clickEndDateCalendar();
+        System.out.println("click Calculate Duration");
         clickCalculateDuration();
     }
 
